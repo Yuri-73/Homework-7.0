@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +12,12 @@ public class Main {
         System.out.print("I enter the year: ");
         int year = scanner.nextInt(); // Ввод года
         yearIsLeap(year); // Вызов метода определения високосного года без возвращения переменной
+
+        int currentYear = LocalDate.now().getYear();
+        int currentDate = LocalDate.now().getDayOfMonth();
+        System.out.println("currentYear = " + currentYear); //Просто для тренировки вывода текущего года
+        System.out.println("currentDate = " + currentDate); //Просто для тренировки вывода текущего дня
+
     }
     public static void yearIsLeap(int Year) {
         if (Year % 4 == 0) {
