@@ -16,6 +16,7 @@ public class Main {
         int currentYear = LocalDate.now().getYear();
         int currentDate = LocalDate.now().getDayOfMonth();
         System.out.println("currentYear = " + currentYear); //Просто для тренировки вывода текущего года
+
         System.out.println("currentDate = " + currentDate); //Просто для тренировки вывода текущего дня
 
     }
